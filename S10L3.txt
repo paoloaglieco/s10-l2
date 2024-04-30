@@ -1,0 +1,13 @@
+---------------------------------------------------
+0x00001141 <+8>:    mov     EAX,0x20 sposta 32 all eax
+0x00001148 <+15>:   mov     EDX,0x38 sposta 56 all edx
+0x00001155 <+28>:   add     EAX,EDX  fa la somma
+0x00001157 <+30>:   mov     EBP, EAX sposta eax all ebp
+0x0000115a <+33>:   cmp     EBP,0xa  confronta col 10
+0x0000115e <+37>:   jge     0x1176 <main+61> se è maggiore di 10 fa un salto all 'indirizzo
+0x0000116a <+49>:   mov     EAX,0x0   sposta 0x0 a eax
+0x0000116f <+54>:   call    0x1030 <printf@plt> chiama il printf
+
+EAX: Registro generale utilizzato frequentemente per operazioni aritmetiche e di ritorno da funzioni.
+EDX: Un altro registro generale utilizzato spesso per supportare operazioni aritmetiche e altre funzioni di calcolo.
+EBP: Questo registro è tradizionalmente usato come puntatore di base dello stack, ma può essere utilizzato anche per altre operazioni, come nella tua sequenza di codice.
